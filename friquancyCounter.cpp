@@ -28,28 +28,28 @@ int main() {
 
 void frequency(char string[],int size){
 	
-	int i = 0, j,count=0, letters[26] = {};          // initilazing variables and array that will store the letter-frequency 
+	int i = 0, j,count=0, letters[26] = {};       // initilazing variables and array that will store the letter-frequency 
     double frequencies=0.0;                          // in order to display frequencies as a double because in int it will be just 0 for every letter
     
-    while (string[i] != '\0') {			   	       //check every char until the end
+    while (string[i] != '\0') {			   //check every char until the end
       if (string[i] >='a' && string[i] <= 'z') {  //check all letters in string from a to z
-         j = string[i]-'a';					      //stores  frequencies of these letters
-          letters[j]++;    					     //increment frequences of letters
+         j = string[i]-'a';		         //stores  frequencies of these letters
+          letters[j]++;    		        //increment frequences of letters
       }
-      	i++;								   //increment loop
-      	count++;							  //count all letters
+      	i++;				      //increment loop
+      	count++;		             //count all letters
       		if (string [i]==' ')
-      		count--;						//decrement if it is  space
+      		count--;		   //decrement if it is  space
    }
     
  
   cout<<"Letters"<<"\t"<<"Times"<<"\t "<<"  Frequencies"<<endl;
   
    for (i = 0; i < 26; i++){
-   frequencies =static_cast<double>(letters[i]) / (double)(1.0 * count);              //convert integer to double
+   frequencies =static_cast<double>(letters[i]) / (double)(1.0 * count); //convert integer to double
    cout.setf(ios::fixed);
    cout.setf(ios::showpoint);
-   cout.precision(4);													            //to reduce frequency to 4 precisions number
+   cout.precision(4);                                                   //to reduce frequency to 4 precisions number
    cout<<" "<<char(i + 'a')<<" : \t"<< letters[i] <<"\t : \t"<< frequencies <<endl; //print results in the table format
 }
    cout<<"Sum of all letters : "<<count<<endl;
