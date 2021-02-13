@@ -54,6 +54,25 @@ void frequency(char string[],int size){
 }
    cout<<"Sum of all letters : "<<count<<endl;
 }
+// for(int i = 0; str[i] != '\0'; i++)
+// 	{
+// 		freq[str[i]]++;
+    
+//         count++;							  //count all letters
+//       		if (str [i]==' ')
+//       		count--;						//decrement if it is  space
+// 	}
+	
+
+// 	for(int i = 0; i < 256; i++)
+// 	{
+// 		if(freq[i] != 0)
+// 		{
+// 			cout << (char)i << "" << freq[i] << endl;
+// 		}
+// 	}
+//         cout<<"size"<< count<<endl;
+
 
 void print_decryption(){
 	cout<<endl<<"Decrypted text :"
