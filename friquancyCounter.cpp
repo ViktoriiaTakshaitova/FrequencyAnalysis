@@ -72,6 +72,7 @@ void frequency(char string[],int size){
 // 		}
 // 	}
 //         cout<<"size"<< count<<endl;
+// 	}
 
 
 void print_decryption(){
